@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Iniciar Sesión:</h1>
+</head>
+
+<body>
+    <form method="POST" action=".">
+        {% csrf_token %}
+    
+        {{form.as_p}}
+
+        <input type="submit" value="Iniciar Sesión" />
+    </form>
+
+    <p><A HREF="../registro"> Registrarse </A></p>
+</body>
+
+</html>
